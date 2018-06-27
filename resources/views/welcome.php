@@ -13,6 +13,7 @@
 		<li ng-repeat="todo in todos">{{ todo.body }}</li>
 	</ul>
 </body>
+	<script src="/js/angular/app.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
 	<script src="/js/main.js"></script>
 </html>
