@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,10 @@
 	<h1>Todos header</h1>
 
 	<ul>
-		<li ng-repeat="todo in todos">{{ todo.body }}</li>
+		<li ng-repeat="todo in todos">[[todo.body]]</li>
 	</ul>
 </body>
-	<script src="/js/angular/app.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"></script>
-	<script src="/js/main.js"></script>
+	<script src="/js/angular/app.js"></script>
+	<script src="/js/angular/todoCtrl.js"></script>
 </html>
