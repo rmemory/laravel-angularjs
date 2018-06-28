@@ -10,7 +10,7 @@
 	}
 	//use strict gives us the ability to use Javascript 2015 style code.
 	angular.module('myApp',[
-			'ui.bootstrap',
+			// 'ui.bootstrap',
 		], function($interpolateProvider) {
 		$interpolateProvider.startSymbol('[[');
 		$interpolateProvider.endSymbol(']]');
@@ -19,22 +19,4 @@
 	// all of your global dependancies you'll want to put in the array passed here
 	// i.e. angular.ui.bootstrap, ui.router etc.... whatever you need that is an 
 	// external dependancies that don't ship with the framework.
-})();
-
-(function(){
-	'use strict';
-	angular
-	.module('myApp')
-	.controller('TodosController', TodosController)
-	TodosController.$inject = [
-		"$scope"
-	];
-	function TodosController(
-		$scope
-		){
-		$scope.todos = [
-				{ body: 'Go to store'},
-				{ body: 'Finish Video'},
-			];
-	}
 })();
